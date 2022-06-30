@@ -116,7 +116,7 @@ public class Sorting {
 	}
 
 	// -----------------------------------------------------------------------
-	// Implement Optimized Quicksort below (see A5 handout for details)
+	// Implement Optimized Quicksort below
 	// -----------------------------------------------------------------------
 	public static void QuickSortOptimized(long[] a) {
 		shuffle(a);
@@ -147,7 +147,7 @@ public class Sorting {
 	}
 
 	// ---------------------------------------------------------------------------
-	// Implement Non-Recursive MergeSort below (see A5 handout for details)
+	// Implement Non-Recursive MergeSort below
 	// ---------------------------------------------------------------------------
 	public static void MergeSortNonRec(long[] a) {
 		// Note: You can assume that the size of the array is a power of 2
