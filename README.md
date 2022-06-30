@@ -1,5 +1,5 @@
 # Sorting :stopwatch:
-This program is written in **java** and is a quick exercise demonstrating the time complexity of **bubble sort**, **insertion sort**, **selection sort**, **merge sort**, *quick sort**, and optimized version of **quick sort** on a randomized or ordered array of `n` integers.
+This program is a quick exercise written in **java** demonstrating the time complexity of **bubble sort**, **insertion sort**, **selection sort**, **merge sort**, *quick sort**, and optimized version of **quick sort** on a randomized or ordered array of `n` integers.
 
 ## Instructions
 ```
