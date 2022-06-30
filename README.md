@@ -8,30 +8,44 @@ $ java Sorting.java
 ```
 
 ## Breakdown
+### SortHelper.java
+A helper class that creates a random or ordered array of integers of size `n` as well as a test method.
+```
+public class SortHelper {
+  public static long[] randArray(int n)
+  public static boolean testSort(long[] a)
+  public static long[] orderedArray(int n)
+}
+```
+
+### Sorting.java
 All of the names of the functions are self-explanatory besides `QuickSortOptimized` which has two optimizations
 - for arrays below 10 integers, insertion sort is used instead
 - randomizes integers in the array to prevent worst-case performance of quick sort on an already sorted array
+In order to test sorted and unsorted array time complexities change `boolean useOrderedArray` on line 208 to `true` or `false`.
 ``` java
-public static void BubbleSort(long[] a)
-public static void InsertionSort(long[] a)
-public static void SelectionSort(long[] a)
+public class Sorting {
+  public static void BubbleSort(long[] a)
+  public static void InsertionSort(long[] a)
+  public static void SelectionSort(long[] a)
 
-// mergesort with helper methods
-public static void MergeSort(long[] a)
-private static void sort(long[] a, long[] aux, int lo, int hi) {
-private static void merge(long[] a, long[] aux, int lo, int mid, int hi)
+  // mergesort with helper methods
+  public static void MergeSort(long[] a)
+  private static void sort(long[] a, long[] aux, int lo, int hi) {
+  private static void merge(long[] a, long[] aux, int lo, int mid, int hi)
 
-// recursive quick sort and helper methods
-public static void QuickSort(long[] a)
-private static void QuickSort(long[] a, int left, int right) {
-private static int partition(long[] a, int left, int right, int pIdx)
+  // recursive quick sort and helper methods
+  public static void QuickSort(long[] a)
+  private static void QuickSort(long[] a, int left, int right) {
+  private static int partition(long[] a, int left, int right, int pIdx)
 
-// optimized recursive quick sort
-public static void QuickSortOptimized(long[] a)
-private static void QuickSortOptimized(long[] a, int left, int right)
-public static void shuffle(long[] a)
+  // optimized recursive quick sort
+  public static void QuickSortOptimized(long[] a)
+  private static void QuickSortOptimized(long[] a, int left, int right)
+  public static void shuffle(long[] a)
 
-public static void MergeSortNonRec(long[] a)
+  public static void MergeSortNonRec(long[] a)
+}
 ```
 
 ## Example
