@@ -4,7 +4,7 @@ This program is a quick exercise written in **java** demonstrating the time comp
 ## Instructions
 ```
 $ javac Sorting.java
-$ java Sorting.java
+$ java Sorting
 ```
 
 ## Breakdown
